@@ -1,0 +1,84 @@
+<!DOCTYPE html> 
+ <html lang="en" xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="styles.css"> 
+    <title>Notification Page</title> 
+    <style> 
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #f0f0f0; 
+            margin: 0; 
+            padding: 0; 
+        } 
+ 
+        .notification-container { 
+            background-color: #fff; 
+            width: 80%; 
+            max-width: 400px; 
+            margin: 20px auto; 
+            padding: 20px; 
+            border-radius: 8px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        } 
+ 
+        h1 { 
+            font-size: 24px; 
+            margin: 0 0 20px; 
+            color: #333; 
+        } 
+ 
+        .notification-list { 
+            list-style: none; 
+            padding: 0; 
+        } 
+ 
+            .notification-list li { 
+                border-bottom: 1px solid #ddd; 
+                padding: 10px 0; 
+                display: flex; 
+                justify-content: space-between; 
+            } 
+ 
+                .notification-list li:last-child { 
+                    border-bottom: none; 
+                } 
+ 
+            .notification-list p { 
+                margin: 0; 
+                font-size: 16px; 
+                color: #333; 
+            } 
+ 
+            .notification-list span { 
+                font-size: 12px; 
+                color: #777; 
+            } 
+ 
+            .notification-list li:hover { 
+                background-color: #f5f5f5; 
+                cursor: pointer; 
+            } 
+    </style> 
+ 
+</head> 
+<body> 
+    <div class="notification-container"> 
+        <h1>Notifications</h1> 
+        <ul class="notification-list"> 
+            <li> 
+                <p>You have a new message.</p> 
+                <span>2 minutes ago</span> 
+            </li> 
+            <li> 
+                <p>Office 1 posted something.</p> 
+                <span>1 hour ago</span> 
+            </li> 
+            <li> 
+                <p>You have 2 friend request pending.</p> 
+                <span>Yesterday</span> 
+            </li> 
+        </ul> 
+    </div> 
+</body>
