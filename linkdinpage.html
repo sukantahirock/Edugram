@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>LinkedIn</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.4/css/all.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f2ef;
+            margin: 0;
+            padding: 0;
+        }
+
+        #header {
+            background-color: #0077B5;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+        }
+
+            #header h1 {
+                margin: 0;
+            }
+
+        #profile {
+            width: 800px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        #profile-pic {
+            width: 150px;
+            height: 150px;
+            border: 2px solid #0077B5;
+            border-radius: 50%;
+            margin: 0 auto;
+            display: block;
+        }
+
+        #profile-name {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        #profile-headline {
+            font-style: italic;
+            color: #666;
+        }
+
+        #profile-summary {
+            margin: 20px 0;
+        }
+
+        #connections {
+            margin-top: 20px;
+        }
+
+        #posts {
+            margin-top: 20px;
+        }
+
+        .post {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .search {
+            margin: 10px;
+        }
+
+            .search input {
+                padding: 5px;
+            }
+
+        .notification-icon {
+            position: relative;
+            display: inline-block;
+            margin: 20px; /* Adjust the margin as needed */
+        }
+
+            .notification-icon a {
+                text-decoration: none;
+                color: cornflowerblue; /* Change the color to your preferred icon color */
+            }
+
+            .notification-icon i {
+                font-size: 30px; /* Adjust the icon size as needed */
+                position: relative;
+            }
+
+            .notification-icon::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 20px;
+                height: 20px;
+                background-color: grey;
+                border-radius: 50%;
+            }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Notification Icon</title>
+</head>
+<body>
+    <div id="header">
+        <h1>JOb feature</h1>
+
+    </div>
+    <div class="search">
+        <input type="text" placeholder="Search...">
+        <button>Search</button>
+        <div class="notification-icon">
+            <a href="notification-page.html">
+                <i class="fas fa-bell"></i> <!-- Font Awesome bell icon -->
+            </a>
+        </div>
+    </div>
+    
+    <div id="profile">
+        <img id="profile-pic" src="your-profile-picture.jpg" alt="Your Name">
+        <h2 id="profile-name">Your Name</h2>
+        <p id="profile-headline">Job Title at Your Company</p>
+        <p id="profile-summary">Your professional summary goes here...</p>
+        <p id="connections">500+ Connections</p>
+    </div>
+
+    <div id="posts">
+        <h2>Explore Posts</h2>
+        <div class="post" onclick="location.href='post1.html';">
+            <h3>Post Title 1</h3>
+            <p>Content of the first post goes here...</p>
+        </div>
+        <div class="post" onclick="location.href='post2.html';">
+            <h3>Post Title 2</h3>
+            <p>Content of the second post goes here...</p>
+        </div>
+    </div>
+</body>
+</html>
